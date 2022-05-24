@@ -6,6 +6,8 @@ import 'package:geolocator/app/modules/home/bindings/home_binding.dart';
 import 'package:geolocator/app/modules/home/views/home_view.dart';
 import 'package:geolocator/app/modules/login/bindings/login_binding.dart';
 import 'package:geolocator/app/modules/login/views/login_view.dart';
+import 'package:geolocator/app/modules/new_password/bindings/new_password_binding.dart';
+import 'package:geolocator/app/modules/new_password/views/new_password_view.dart';
 
 part 'app_routes.dart';
 
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.LOGIN,
       page: () => LoginView(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: _Paths.NEW_PASSWORD,
+      page: () => NewPasswordView(),
+      binding: NewPasswordBinding(),
     ),
   ];
 }
