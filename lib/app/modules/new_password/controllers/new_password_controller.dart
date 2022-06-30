@@ -29,7 +29,7 @@ class NewPasswordController extends GetxController {
           }
         } catch (e) {
           Get.snackbar("Terjadi kesalahan",
-              "tidak bisa ubah password,silahkan hubungi admin");
+              "tidak bisa ubah password,silahkan hubungi adminN");
         }
       } else {
         Get.snackbar("Terjadi kesalahan", "Password baru wajib diubah ");

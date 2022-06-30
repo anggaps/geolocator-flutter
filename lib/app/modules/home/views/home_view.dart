@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/app/routes/app_pages.dart';
 
@@ -24,6 +25,19 @@ class HomeView extends GetView<HomeController> {
           style: TextStyle(fontSize: 20),
         ),
       ),
+      floatingActionButton: Obx(() => FloatingActionButton(
+            onPressed: () async {
+              if (controller.isLoading.isFalse) {
+                controller.isLoading.value = true;
+                await FirebaseAuth.instance.signOut();
+                Get.offAllNamed(Routes.LOGIN);
+                controller.isLoading.value = false;
+              }
+            },
+            child: controller.isLoading.isFalse
+                ? const Icon(Icons.logout)
+                : const CircularProgressIndicator(),
+          )),
     );
   }
 }

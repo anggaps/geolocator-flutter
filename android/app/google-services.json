@@ -8,42 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:479036331642:android:432e343afed9f040bc0dc3",
-        "android_client_info": {
-          "package_name": "com.example.flutterfire"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "479036331642-dorkbscubd1a73fefr1b2gj6mas5pujs.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDG8LCRcpYAIg3To_x5ziI4wqE4U18B97s"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "479036331642-dorkbscubd1a73fefr1b2gj6mas5pujs.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "479036331642-hdgk3he3vjd96rle83parptlsjlht7ha.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.flutterfire"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:479036331642:android:1120d5dff811a886bc0dc3",
         "android_client_info": {
           "package_name": "com.example.geolocator"
